@@ -1,0 +1,267 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 300" width="900" height="300">
+  <defs>
+    <!-- GitHub dark theme colors -->
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#010409"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#58a6ff" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#58a6ff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="steam" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8b949e" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#8b949e" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#8b949e" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="300" fill="url(#bg)"/>
+
+  <!-- Subtle grid (math paper feel) -->
+  <g opacity="0.06" stroke="#58a6ff" stroke-width="0.5">
+    <line x1="0" y1="50" x2="900" y2="50"/>
+    <line x1="0" y1="100" x2="900" y2="100"/>
+    <line x1="0" y1="150" x2="900" y2="150"/>
+    <line x1="0" y1="200" x2="900" y2="200"/>
+    <line x1="0" y1="250" x2="900" y2="250"/>
+    <line x1="100" y1="0" x2="100" y2="300"/>
+    <line x1="200" y1="0" x2="200" y2="300"/>
+    <line x1="300" y1="0" x2="300" y2="300"/>
+    <line x1="400" y1="0" x2="400" y2="300"/>
+    <line x1="500" y1="0" x2="500" y2="300"/>
+    <line x1="600" y1="0" x2="600" y2="300"/>
+    <line x1="700" y1="0" x2="700" y2="300"/>
+    <line x1="800" y1="0" x2="800" y2="300"/>
+  </g>
+
+  <!-- ============ SCROLLING SYMBOLS LAYER ============ -->
+  <!-- Row 1: top drifting symbols (AI/ML/math) -->
+  <g font-family="'SF Mono', Menlo, Consolas, monospace" font-size="14" fill="#58a6ff" opacity="0.55">
+    <g>
+      <animateTransform attributeName="transform" type="translate" from="0 0" to="-900 0" dur="40s" repeatCount="indefinite"/>
+      <text x="20" y="60">ψ(x,t)</text>
+      <text x="180" y="60">∇·E = ρ/ε₀</text>
+      <text x="380" y="60">∂²ψ/∂x²</text>
+      <text x="560" y="60">H|ψ⟩ = E|ψ⟩</text>
+      <text x="760" y="60">∮ F·dr</text>
+      <text x="920" y="60">ψ(x,t)</text>
+      <text x="1080" y="60">∇·E = ρ/ε₀</text>
+      <text x="1280" y="60">∂²ψ/∂x²</text>
+      <text x="1460" y="60">H|ψ⟩ = E|ψ⟩</text>
+      <text x="1660" y="60">∮ F·dr</text>
+    </g>
+  </g>
+
+  <!-- Row 2: ML / AI symbols -->
+  <g font-family="'SF Mono', Menlo, Consolas, monospace" font-size="13" fill="#3fb950" opacity="0.45">
+    <g>
+      <animateTransform attributeName="transform" type="translate" from="0 0" to="-900 0" dur="55s" repeatCount="indefinite"/>
+      <text x="60" y="95">σ(Wx + b)</text>
+      <text x="260" y="95">argmin L(θ)</text>
+      <text x="460" y="95">∂L/∂w</text>
+      <text x="640" y="95">p(y|x;θ)</text>
+      <text x="820" y="95">backprop</text>
+      <text x="980" y="95">σ(Wx + b)</text>
+      <text x="1180" y="95">argmin L(θ)</text>
+      <text x="1380" y="95">∂L/∂w</text>
+      <text x="1560" y="95">p(y|x;θ)</text>
+      <text x="1740" y="95">backprop</text>
+    </g>
+  </g>
+
+  <!-- Row 3: math constants -->
+  <g font-family="'SF Mono', Menlo, Consolas, monospace" font-size="12" fill="#8b949e" opacity="0.4">
+    <g>
+      <animateTransform attributeName="transform" type="translate" from="0 0" to="-900 0" dur="70s" repeatCount="indefinite"/>
+      <text x="40" y="120">e^(iπ) + 1 = 0</text>
+      <text x="280" y="120">∫ e^(-x²) dx = √π</text>
+      <text x="520" y="120">Σ 1/n² = π²/6</text>
+      <text x="740" y="120">F = ma</text>
+      <text x="900" y="120">E = mc²</text>
+      <text x="1080" y="120">e^(iπ) + 1 = 0</text>
+      <text x="1320" y="120">∫ e^(-x²) dx = √π</text>
+      <text x="1560" y="120">Σ 1/n² = π²/6</text>
+      <text x="1780" y="120">F = ma</text>
+    </g>
+  </g>
+
+  <!-- ============ GLOW UNDER TABLE ============ -->
+  <ellipse cx="450" cy="245" rx="220" ry="30" fill="url(#glow)"/>
+
+  <!-- ============ TABLE ============ -->
+  <rect x="180" y="235" width="540" height="4" fill="#30363d"/>
+  <rect x="200" y="239" width="6" height="45" fill="#21262d"/>
+  <rect x="694" y="239" width="6" height="45" fill="#21262d"/>
+
+  <!-- ============ BOX (Schrödinger's box) ============ -->
+  <!-- Box back wall -->
+  <rect x="400" y="150" width="120" height="85" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+
+  <!-- Probability cloud inside box (flickers) -->
+  <g>
+    <ellipse cx="460" cy="195" rx="50" ry="35" fill="#58a6ff" opacity="0.15">
+      <animate attributeName="opacity" values="0.05;0.25;0.05" dur="3s" repeatCount="indefinite"/>
+    </ellipse>
+    <ellipse cx="460" cy="195" rx="30" ry="20" fill="#58a6ff" opacity="0.1">
+      <animate attributeName="opacity" values="0.15;0.05;0.15" dur="2s" repeatCount="indefinite"/>
+    </ellipse>
+  </g>
+
+  <!-- Cat inside box (partially visible, glowing eyes) -->
+  <g>
+    <!-- Cat body silhouette -->
+    <path d="M 435 220 Q 435 200 450 198 Q 465 196 478 205 Q 485 210 485 220 Z" fill="#0d1117" opacity="0.9"/>
+    <!-- Cat head -->
+    <circle cx="460" cy="205" r="10" fill="#0d1117" opacity="0.9"/>
+    <!-- Ears -->
+    <polygon points="452,197 455,190 459,197" fill="#0d1117" opacity="0.9"/>
+    <polygon points="461,197 465,190 468,197" fill="#0d1117" opacity="0.9"/>
+    <!-- Eyes: flicker between open (green glow) and closed (dim) -->
+    <g>
+      <circle cx="456" cy="205" r="1.5" fill="#3fb950">
+        <animate attributeName="opacity" values="1;0.2;1;0.2;1" dur="4s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="464" cy="205" r="1.5" fill="#3fb950">
+        <animate attributeName="opacity" values="1;0.2;1;0.2;1" dur="4s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+    <!-- Tail -->
+    <path d="M 480 215 Q 490 210 488 220" stroke="#0d1117" stroke-width="3" fill="none" opacity="0.9">
+      <animate attributeName="d" values="M 480 215 Q 490 210 488 220; M 480 215 Q 492 218 490 225; M 480 215 Q 490 210 488 220" dur="3s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- Box front wall (drawn over cat) -->
+  <rect x="400" y="150" width="120" height="85" fill="none" stroke="#30363d" stroke-width="1.5"/>
+
+  <!-- Box lid (opens/closes subtly) -->
+  <g>
+    <rect x="395" y="148" width="130" height="6" fill="#21262d" stroke="#30363d" stroke-width="1">
+      <animateTransform attributeName="transform" type="rotate" values="0 460 150; -8 460 150; 0 460 150; 8 460 150; 0 460 150" dur="8s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- ============ COFFEE CUP (left of box) ============ -->
+  <g>
+    <!-- Saucer -->
+    <ellipse cx="340" cy="234" rx="28" ry="4" fill="#21262d" stroke="#30363d" stroke-width="1"/>
+    <!-- Cup body -->
+    <path d="M 320 200 L 360 200 L 356 230 Q 340 236 324 230 Z" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+    <!-- Handle -->
+    <path d="M 358 208 Q 372 210 370 220 Q 368 228 356 226" fill="none" stroke="#30363d" stroke-width="2"/>
+    <!-- Coffee surface -->
+    <ellipse cx="340" cy="202" rx="18" ry="2.5" fill="#8b4513" opacity="0.7"/>
+    <!-- Steam: 3 wisps rising, drifting -->
+    <g fill="none" stroke="#8b949e" stroke-width="1.2" opacity="0.6">
+      <path d="M 332 195 Q 328 185 332 175 Q 336 165 332 155">
+        <animate attributeName="opacity" values="0;0.7;0" dur="4s" repeatCount="indefinite"/>
+        <animateTransform attributeName="transform" type="translate" values="0 0; 0 0; -4 -20" dur="4s" repeatCount="indefinite"/>
+      </path>
+      <path d="M 340 195 Q 344 185 340 175 Q 336 165 340 155">
+        <animate attributeName="opacity" values="0;0.7;0" dur="4s" begin="1.3s" repeatCount="indefinite"/>
+        <animateTransform attributeName="transform" type="translate" values="0 0; 0 0; 3 -20" dur="4s" begin="1.3s" repeatCount="indefinite"/>
+      </path>
+      <path d="M 348 195 Q 344 185 348 175 Q 352 165 348 155">
+        <animate attributeName="opacity" values="0;0.7;0" dur="4s" begin="2.6s" repeatCount="indefinite"/>
+        <animateTransform attributeName="transform" type="translate" values="0 0; 0 0; -2 -20" dur="4s" begin="2.6s" repeatCount="indefinite"/>
+      </path>
+    </g>
+  </g>
+
+  <!-- ============ NEURAL NET (right of box) ============ -->
+  <!-- <g opacity="0.7" transform="translate(600, 170)"> -->
+    <!-- Layer 1 -->
+    <!-- <circle cx="0" cy="0" r="3" fill="#58a6ff">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="0" cy="20" r="3" fill="#58a6ff">
+      <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="0" cy="40" r="3" fill="#58a6ff">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
+    </circle> -->
+    <!-- Layer 2 -->
+    <!-- <circle cx="40" cy="10" r="3" fill="#3fb950">
+      <animate attributeName="opacity" values="1;0.4;1" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="40" cy="30" r="3" fill="#3fb950">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="2.5s" repeatCount="indefinite"/>
+    </circle> -->
+    <!-- Layer 3 -->
+    <!-- <circle cx="80" cy="20" r="3" fill="#f0883e">
+      <animate attributeName="opacity" values="0.6;1;0.6" dur="3s" repeatCount="indefinite"/>
+    </circle> -->
+    <!-- Connections -->
+    <!-- <g stroke="#30363d" stroke-width="0.8">
+      <line x1="0" y1="0" x2="40" y2="10"/><line x1="0" y1="0" x2="40" y2="30"/>
+      <line x1="0" y1="20" x2="40" y2="10"/><line x1="0" y1="20" x2="40" y2="30"/>
+      <line x1="0" y1="40" x2="40" y2="10"/><line x1="0" y1="40" x2="40" y2="30"/>
+      <line x1="40" y1="10" x2="80" y2="20"/><line x1="40" y1="30" x2="80" y2="20"/>
+    </g>
+  </g> -->
+
+  <!-- ============ WAVE FUNCTION GRAPH (right) ============ -->
+  <!-- <g transform="translate(720, 200)" opacity="0.6">
+    <line x1="0" y1="20" x2="80" y2="20" stroke="#30363d" stroke-width="0.8"/>
+    <path d="M 0 20 Q 10 5 20 20 T 40 20 T 60 20 T 80 20" fill="none" stroke="#58a6ff" stroke-width="1.5">
+      <animate attributeName="d"
+        values="M 0 20 Q 10 5 20 20 T 40 20 T 60 20 T 80 20;
+                M 0 20 Q 10 35 20 20 T 40 20 T 60 20 T 80 20;
+                M 0 20 Q 10 5 20 20 T 40 20 T 60 20 T 80 20"
+        dur="3s" repeatCount="indefinite"/>
+    </path>
+  </g> -->
+
+
+
+  
+
+  <!-- ============ FLOATING PARTICLES ============ -->
+  <g>
+    <circle cx="150" cy="180" r="1" fill="#58a6ff" opacity="0.5">
+      <animate attributeName="cy" values="180;120;180" dur="6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.8;0" dur="6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="250" cy="160" r="1" fill="#3fb950" opacity="0.5">
+      <animate attributeName="cy" values="160;100;160" dur="7s" begin="1s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.8;0" dur="7s" begin="1s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="550" cy="170" r="1" fill="#58a6ff" opacity="0.5">
+      <animate attributeName="cy" values="170;110;170" dur="8s" begin="2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.8;0" dur="8s" begin="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="800" cy="150" r="1" fill="#f0883e" opacity="0.5">
+      <animate attributeName="cy" values="150;90;150" dur="9s" begin="3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.8;0" dur="9s" begin="3s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- ============ NAME / TAGLINE ============ -->
+  <g font-family="'SF Mono', Menlo, Consolas, monospace" text-anchor="middle">
+    <text x="450" y="285" font-size="18" fill="#e6edf3" letter-spacing="6">
+      SANJIB BAYEN
+      <animate attributeName="opacity" values="0.7;1;0.7" dur="5s" repeatCount="indefinite"/>
+    </text>
+    <!-- <text x="450" y="55" font-size="10" fill="#8b949e" letter-spacing="2">
+      BETWEEN TWO STATES
+    </text> -->
+  </g>
+
+  <!-- ============ BOTTOM STATUS BAR ============ -->
+  <!-- <g font-family="'SF Mono', Menlo, Consolas, monospace" font-size="10" fill="#8b949e" opacity="0.7">
+    <text x="20" y="290">[ ai · ml ]</text>
+    <text x="140" y="290">[ quantum ]</text>
+    <text x="260" y="290">[ mathematics ]</text>
+    <text x="420" y="290">[ coffee-driven ]</text>
+    <text x="600" y="290">[ minimal ]</text>
+    <text x="740" y="290">[ v.2026 ]</text>
+  </g> -->
+
+  <!-- Blinking cursor bottom right -->
+  <rect x="878" y="282" width="6" height="10" fill="#58a6ff">
+    <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+  </rect>
+
+</svg>
